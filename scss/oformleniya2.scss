@@ -1,0 +1,105 @@
+.conteiner .div_kozina_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2%;
+  justify-content: space-between;
+  .o_zakaz_karzina {
+    width: 65%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    .o_zakaz_karzina_box {
+      display: flex;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+      .box_korzina_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box_korzina_text {
+        width: 70%;
+        h4 {
+          padding-top: 4%;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          color: #000000;
+        }
+        p {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: #00ac73;
+          padding-top: 2%;
+          padding-bottom: 4%;
+        }
+        button {
+          width: 50px;
+          height: 50px;
+          border-radius: 15px;
+          font-size: 25px;
+          cursor: pointer;
+          align-items: center;
+          border: 1px solid;
+        }
+
+        span {
+          font-size: 24px;
+          padding: 0 4%;
+        }
+      }
+    }
+  }
+  .ofarmleniya_korzina {
+    width: 35%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    padding: 2%;
+    border-radius: 15px;
+    height: 50%;
+    .oformlBTn{
+        font-weight: 400;
+        font-size: x;
+        line-height: 24px;
+        margin: 0 auto;
+        color: #ffffff;
+        background-color: #00ac73;
+        padding: 18px;
+        border-radius: 15px;
+        transition: 0.5s linear all;
+        &:hover {
+          background-color: #fefefe;
+          color: #000000;
+          border: 1px solid #00ac73;}}
+   
+    .div_ofarmleniya {
+      display: flex;
+      justify-content: space-between;
+      gap: 2vw;
+      .box_ofarmleniya {
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000000;
+          padding-bottom: 1%;
+        }
+    }
+    .box2_oformleniya {
+        p {
+            padding-bottom: 1%;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000000;
+        }
+        .p_ofrm{
+        padding-top: 5%;
+        }
+      }
+    }
+  }
+}

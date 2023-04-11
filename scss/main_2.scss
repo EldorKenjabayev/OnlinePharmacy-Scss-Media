@@ -1,0 +1,138 @@
+.conteiner {
+  .div_burgerbtn {
+    border: 1px solid transparent;
+    position: relative;
+    padding: 10px 0;
+    width: 100%;
+    display: none;
+    button {
+      width: 45px;
+      height: 45px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 3%;
+      top: -122%;
+      z-index: 101;
+      flex-direction: column;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+      border: 1px solid transparent;
+      gap: 6px;
+      padding: 1px 4px;
+      
+      .span {
+        width: 70%;
+        height: 2.5px;
+        background-color: #000000;
+        transition: 1s all linear;
+      }
+      .span1 {
+        transform: rotate(45deg);
+        transition: .5s all linear;
+        position: absolute;
+      }
+      .span2{
+        transform: scaleX(0);
+        transition: .5s all linear;
+      }
+      .span3{
+        position: absolute;
+        transform: rotate(-45deg) ;
+        transition: .5s all linear;
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 57px;
+    color: #000000;
+    padding: 3%;
+    padding-top: 8%;
+  }
+  .popular_tovar {
+    width: 100%;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    display: flex;
+    gap: 1vw;
+    justify-content: space-around;
+    
+    .btn_Menu_Tovar {
+      width: 30%;
+      transition: .7s all linear;
+      border: 1px solid transparent;
+      padding-left: 7%;
+      padding: 3% 1%;
+      background-color: #fff;
+      border-radius: 20px;
+      ul {
+        z-index: 100;
+        background-color: #fff;
+        top: 20%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1.5vh;
+
+        li strong a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          cursor: pointer;
+          color: #000000;
+        }
+        #filtr{
+          display: none;
+        }
+      }
+    }
+    .div__tovar_popular {
+      display: flex;
+      width: 70%;
+      flex-wrap: wrap;
+      gap: 1.5vw;
+      padding-bottom: 2%;
+      .box__tovar_popular {
+        background-color:#fff;
+        width: 27%;
+        height: 350px;
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 30px;
+        padding: 1%;
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #7e7e7e;
+          padding: 2%;
+        }
+        .pokupok_price {
+          font-weight: 240px;
+          font-size: 22px;
+          line-height: 27px;
+          color: #00ac73;
+          padding-left: 2%;
+          position: relative;
+          top: 10%;
+        }
+        .pokupok_img {
+          width: 100%;
+          height: 55%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          img {
+            transition: 0.5s all linear;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

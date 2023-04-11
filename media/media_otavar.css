@@ -1,0 +1,284 @@
+@media screen and (max-width:1787px){
+   
+}
+
+@media screen and (max-width:1262px){
+    .conteiner .o___Tovar .o__tovar_text .korzina{
+        left: 50%;
+    }  
+}
+@media screen and (max-width:653px){
+    .conteiner .o___Tovar .o__tovar_text .korzina{
+        left: 40%;
+    } 
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 28px;
+        line-height: 30px;
+    } 
+    .conteiner .o___Tovar .o__tovar_text p {
+        font-size: 20px;
+    }}
+
+@media screen and (max-width:1075px){
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 35px;
+    }
+    .conteiner .o___Tovar .o__tovar_text p{
+        font-size: 25px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .left_otavar p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .rigth_otavar p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width:903px){
+        .conteiner .o___Tovar{
+            width: 98%;
+        }
+
+
+        .conteiner .pustoy_content{
+            height: 40px;
+        }
+        .conteiner .opisaniya__tovara{
+            width: 98%;
+        }
+}
+
+@media screen and (max-width:640px){
+    .conteiner .o___Tovar{
+        flex-wrap: wrap;
+    }
+    .conteiner .pustoy_content{
+        height: 80px;
+    }
+    
+
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .left_otavar p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .rigth_otavar p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 30px;
+    }
+    
+    .conteiner .o___Tovar .o__tovar_img{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .conteiner .o___Tovar .o__tovar_text{
+        width: 100%;
+    }
+}
+@media screen and (max-width:505px){
+    .conteiner .o___Tovar .o__tovar_img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 27px;
+    }
+    .conteiner .o___Tovar .o__tovar_text p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:445px){
+    .conteiner .o___Tovar .o__tovar_img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 25px;
+    }
+    .conteiner .o___Tovar .o__tovar_text p{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:375px){
+    .conteiner .o___Tovar .o__tovar_img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .conteiner .o___Tovar .o__tovar_text h2{
+        font-size: 22px;
+    }
+    .conteiner .o___Tovar .o__tovar_text p{
+        font-size: 18px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .left_otavar p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .rigth_otavar p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:423px){
+    .conteiner .o___Tovar .o__tovar_text .korzina{
+        left: 20%;
+        padding: 10px 44px;
+        font-size: 20px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .left_otavar p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .conteiner .o___Tovar .o__tovar_text .otavar__dis_flex .rigth_otavar p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:326px){
+    .conteiner .o___Tovar .o__tovar_text .korzina{
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .conteiner h1 {
+      font-size: 57px;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .conteiner h1 {
+      font-size: 50px;
+      padding-top: 6%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .conteiner h1 {
+      font-size: 46px;
+    }
+  }
+  @media screen and (max-width: 1062px) {
+    .conteiner h1 {
+      font-size: 46px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .conteiner h1 {
+      font-size: 44px;
+    }
+  }
+  @media screen and (max-width: 701px) {
+    .conteiner h1 {
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    .conteiner h1 {
+      font-size: 37px;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .conteiner h1 {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .conteiner h1 {
+      font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .conteiner h1 {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 336px) {
+    .conteiner h1 {
+      font-size: 28px;
+    }
+  }
+  @media screen and (max-width: 313px) {
+    .conteiner h1 {
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 290px) {
+    .conteiner h1 {
+      font-size: 23px;
+    }
+  }
+  @media screen and (max-width: 257px) {
+    .conteiner h1 {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 1379px) {
+    .conteiner .content_tovar{
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+    
+  }
+  @media screen and (max-width: 1109px) {
+    .conteiner .content_tovar{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1% .5%;
+    }
+
+  }
+  @media screen and (max-width: 1063px) {
+    .conteiner .content_tovar{
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 2%;
+        gap: 2vh;
+        gap: 1vw;
+    }
+
+
+    .conteiner .content_tovar .box__tovar{
+        width: 29%;
+        margin: 0 auto;
+    }
+
+  }
+  @media screen and (max-width: 687px) {
+    .conteiner .content_tovar{
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 0%;
+        padding-top: 2%;
+        gap: 1vh;
+        gap: 1vw;
+    }
+
+
+    .conteiner .content_tovar .box__tovar{
+        width: 47%;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 402px) {
+      .conteiner .content_tovar .box__tovar{
+          width: 70%;
+          margin: 0 auto;
+          margin-bottom: 2%;
+      }
+
+  }
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/media/media.css">
+    <link rel="stylesheet" href="/media/media_popular_tovar.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner" style="background-color: #F5F5F5;">
+      <div class="navigation">
+        <div class="nav___logo_input">
+          <img src="/navbar.img/photo_2023-03-31_14-50-25.jpg" alt="img" />
+          <div class="input input2">
+            <input
+              type="text" class="input333"
+              placeholder="Введите название товара или заболевания "
+            />
+            <button><i class="bx bx-search"></i></button>
+          </div>
+        </div>
+        <div class="nav__user">
+          <select name="lang" id="lang">
+            <option value="">RUS</option>
+            <option value="">UZB</option>
+            <option value="">ENG</option>
+          </select>
+
+          <div class="box_user">
+            <a id="voyti" onclick="BTN_voyti()">Войти/</a>
+            <a id="register"  onclick="BTN_register()">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="voyti voyti2" id="voyti_content">
+        <h1>Войти</h1>
+        <i class='bx bx-x' onclick="exit_voyti()"></i>
+        <div class="voyti_box">
+          <label for="login">
+            <strong>Введите логин</strong>
+          </label>
+          <input type="text" placeholder="Максим" id="login"><br>
+          <label for="password">
+            <strong>Введите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password">
+          <div class="div__chekbox__zapil_parol">
+            <div class="div__chekbox">
+              <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+              <label for="chebox">
+                <strong>Запомнить меня</strong>
+              </label>
+            </div>
+            <a href="#">Забыли пароль?</a>
+          </div><br>
+          <a href="" class="voyti_btn">Войти</a>
+        </div>
+      </div>
+      <div class="registration registration2" id="register_content">
+        <h1>Регистрация</h1>
+        <i class='bx bx-x' onclick="exit_registration()" id="exit"></i>
+        <div class="registration_box" id="registration_box">
+          <label for="login">
+            <strong>Введите логин</strong>
+          </label>
+          <input type="text" placeholder="Максим" id="login"><br>
+          <label for="password">
+            <strong>Введите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password"><br>
+          <label for="password2">
+            <strong>Повторите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password2">
+          </label>
+          <label for="phone">Введите номер для получения кода</label>
+          <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="+998 90 900 90 90"> <br>
+          <a class="registration_btn" onclick="BTN_register_content()">Продолжить</a>
+      </div>
+      <div class="div_podverjdeniya" id="div_podverjdeniya">
+        <h3>Введите код подтверждения</h3>
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <div class="div__text_otp"><br>
+          <span>Возникли проблемы?</span><a href="#div_podverjdeniya"> Отправить еще раз.</a>
+        </div><br><br>
+        <a href="" class="podverjdenie">Подтвердить</a>
+      </div>
+    </div> <br>
+    <h1>Популярные товары</h1>
+    <div class="div_burgerbtn">
+      <button  onclick="Btn_burger()">
+        <span class="span" id="btn_span1"></span>
+        <span class="span" id="btn_span2" ></span>
+        <span class="span" id="btn_span3"></span>
+      </button>
+    </div><br>
+    <div class="popular_tovar" style="position: relative; z-index: 10;"> 
+      <div class="btn_Menu_Tovar2 btn_Menu_Tovar " id="btn_Menu_Tovar">
+         <ul>
+          <li id="filtr"><h4>Фильтр</h4></li>
+          <li>
+            <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые низкие цены</a></strong>
+            </label></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые ближайшие</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые высокие цены</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Детские</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Взрослые</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Гигиена</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Первая помощь</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Похудение</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Спортсменам</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Средства от насекомых и клещей</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые низкие цены</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые низкие цены</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые высокие цены</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Самые низкие цены</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Детские</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Взрослые</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Гигиена</a></strong>
+            </label>
+          </a></li>
+          <li><a href="">
+             <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+            <label for="chebox">
+              <strong><a href="">Первая помощь</a></strong>
+            </label>
+          </a></li>
+         </ul>
+      </div>
+      <div class="div__tovar_popular">
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/content_img_tovar/Фото (1).png" alt="img" />
+          </a>
+          <p>Мерказолил-Здоровье ТАБ 5МГ №100</p><br>
+          <a href="/stranitsi/otrkrit_tovar.html"class="pokupok_price">От 11 300 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/content_img_tovar/Фото (2).png" alt="" />
+          </a>
+          <p>Вентолин АЭРОЗ Д/ИНГАЛ 100МКГ/ДОЗА 200ДОЗ</p><br>
+
+          <a href="/stranitsi/otrkrit_tovar.html"class="pokupok_price">От 10 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/content_img_tovar/Фото (3).png" alt="img" />
+          </a>
+          <p>Тебантин КАПС 300МГ №50</p><br><br>
+          <a href="/stranitsi/otrkrit_tovar.html"class="pokupok_price">От 120 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (6).png" alt="img" />
+          </a>
+          <p>Тримол таб №10</p>
+          <br /><br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price"> От 3 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/content_img_tovar/Фото (3).png" alt="img" />
+          </a>
+          <p>Тебантин КАПС 300МГ №50</p>
+          <br /><br>
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 120 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/content_img_tovar/Фото (4).png" alt="img" />
+          </a>
+          <p>Мавикс Р-Р Д/ИН 20МГ/2МЛ №5</p>
+          <br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 377 900 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото.png" alt="img" />
+          </a>
+          <p>Инсулатард 100IU/МЛ 10МЛ</p>
+          <br /><br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 33 400 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (1).png" alt="img" />
+          </a>
+          <p>Магний Б6 таб. №50</p>
+          <br /><br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 15 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (2).png" alt="img" />
+          </a>
+          <p>Калимин 60 Н ТАБ 60МГ №100</p>
+          <br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 410 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (3).png" alt="img" />
+          </a>
+          <p>Тивортин р-р д/инф. 4.2% 100мл №1 (Юрия-Фарм, Украина)</p>
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 18 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (4).png" alt="img" />
+          </a>
+          <p>БОБОТИК капли 30МЛ №1 (Medana , Польша)</p>
+          <br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 18 000 сум</a>
+        </div>
+        <div class="box__tovar_popular">
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_img">
+            <img src="/pokupok__img/Фото (5).png" alt="img" />
+          </a>
+          <p>Сперолин капс №90 (ДОРА ЛАЙН, Узбекистан)</p>
+          <br />
+          <a href="/stranitsi/otrkrit_tovar.html" class="pokupok_price">От 450 000 сум</a>
+        </div>       
+      </div>
+    </div>
+    <div class="korzina_btn">
+      <a href="/stranitsi/korzina.html"><i class='bx bxs-basket' style="font-size: 60px; border: 1px solid; padding: 7px; border-radius: 10px; color: #fff; background-color:#00ac73; cursor: pointer; position: fixed; top: 85%; right: 5%; z-index: 130;"></i> </a>
+    </div>
+      <footer>
+        <div class="div__footer1">
+          <img src="/footer_img/2 421.png" alt="img" />
+          <p>
+            Серви поддерживает вас и помогает найти лекарства по выгодным ценам
+            и с удобной круглосуточной доставкой почти в любую точку страны.
+            Будьте здоровы с нами!
+          </p>
+        </div>
+        <div class="div__footer">
+          <ul>
+            <h2>О компании</h2><br>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Пользовательское соглашение</a></li>
+            <li><a href="">Стать партнёром</a></li>
+            <li><a href="">Стать курьером</a></li>
+          </ul>
+        </div>
+        <div class="div__footer"><br><br>
+          <ul>
+            <h2>Помощь</h2><br>
+            <li><a href="">Часто задаваемы вопросы</a></li>
+            <li><a href="">Как заказать</a></li>
+            <li><a href="">Обратная связь</a></li>
+            <li><a href="">Правила для оформления отзывов и</a></li>
+            <li><a href="">комментариев</a></li>
+            <li><a href="">Стать курьером</a></li>
+          </ul>
+        </div>
+        <div class="div__footer2"> 
+          <p>Мы в социальных сетях</p><br>
+          <div class="div_social_media">
+            <a href=""><img src="/footer_img/Platform=Facebook, Shape=Rounded square, Colored=True.png" alt="img"></a>
+            <a href=""><img src="/footer_img/Platform=Instagram, Shape=Rounded square, Colored=True.png" alt="img"></a>
+            <a href=""><img src="/footer_img/Platform=Telegram, Shape=Rounded square, Colored=True.png" alt="img"></a> <br><br>
+          </div><br><br>
+          <a href="tel:+998 71 200-00-00">+998 71 200-00-00</a>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html> 

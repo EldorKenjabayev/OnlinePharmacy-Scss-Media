@@ -1,0 +1,125 @@
+@media screen and (max-width:1067px) {
+    .conteiner h1{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .conteiner .oplata_tip{
+        width: 85%;
+    }
+    .conteiner .div_mesto_naxojdeniya{
+        width: 85%;
+    }
+    .conteiner .danniy_poluchatel{
+        width: 85%;
+        
+    }
+}
+@media screen and (max-width:873px) {
+    .conteiner .oplata_tip{
+        width: 95%;
+    }
+    .conteiner .div_mesto_naxojdeniya{
+        width: 95%;
+    }
+    .conteiner .danniy_poluchatel{
+        width: 95%;
+        
+    }
+}
+@media screen and (max-width:776px) {
+    .conteiner .oplata_tip{
+        width: 99%;
+    }
+    .conteiner .div_mesto_naxojdeniya{
+        width: 99%;
+    }
+    .conteiner .danniy_poluchatel{
+        width: 99%;
+        
+    }
+}
+
+@media screen and (max-width:737px) {
+    .conteiner .oplata_tip .div_Oplata_tip2 .phone_number{
+        padding: 15px 40% 15px 0;
+    }
+    .conteiner .oplata_tip .div_Oplata_tip label{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:701px){
+    .conteiner h1{
+        font-size: 38px;
+        padding-top: 23%;
+    }
+
+    .conteiner .oplata_tip .div_Oplata_tip p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:620px){
+    .conteiner h1{
+        font-size: 35px;
+        padding-top: 27%;
+    }
+}
+@media screen and (max-width:514px){
+    .conteiner h1{
+        font-size: 30px;
+        padding-top: 30%;
+    }
+}
+@media screen and (max-width:457px){
+    .conteiner h1{
+        font-size: 30px;
+        padding-top: 34%;
+    }
+}
+@media screen and (max-width:400px){
+    .conteiner h1{
+        font-size: 27px;
+        padding-top: 42%;
+    }
+}
+@media screen and (max-width:675px){
+    .conteiner .oplata_tip .div_Oplata_tip2 .phone_number{
+        padding: 15px 32% 15px 0;
+    }
+    .conteiner .oplata_tip .div_Oplata_tip label{
+        width: 95%;
+    }
+}
+@media screen and (max-width:598px){
+    .conteiner .oplata_tip{
+        flex-wrap: wrap;
+        gap: 2vh;
+        width: 97%;
+    }
+    .conteiner .oplata_tip .div_Oplata_tip{
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .conteiner .oplata_tip .div_Oplata_tip label{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+    }
+
+    .conteiner .div_mesto_naxojdeniya{
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .conteiner .oplata_tip .div_Oplata_tip2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .conteiner .danniy_poluchatel{
+        width: 97%;
+    }
+}
+

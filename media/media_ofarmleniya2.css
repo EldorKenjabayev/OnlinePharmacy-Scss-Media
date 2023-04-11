@@ -1,0 +1,201 @@
+
+@media screen and (max-width: 1700px) {
+    .conteiner h1 {
+      font-size: 57px;
+      padding-top: 7%;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .conteiner h1 {
+      font-size: 50px;
+      padding-top: 9%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .conteiner h1 {
+      font-size: 46px;
+    }
+  }
+  @media screen and (max-width: 1062px) {
+    .conteiner h1 {
+      font-size: 46px;
+      padding-top: 11%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .conteiner h1 {
+      font-size: 44px;
+    }
+  }
+  @media screen and (max-width: 701px) {
+    .conteiner h1 {
+      font-size: 40px;
+      padding-top: 25%;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    .conteiner h1 {
+      font-size: 37px;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .conteiner h1 {
+      font-size: 35px;
+      padding-top: 28%;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .conteiner h1 {
+      font-size: 32px;
+      padding-top: 31%;
+    }
+  }
+  @media screen and (max-width: 423px) {
+    .conteiner h1 {
+      font-size: 30px;
+      padding-top: 34%;
+    }
+  }
+  @media screen and (max-width: 386px) {
+    .conteiner h1 {
+      font-size: 28px;
+      padding-top: 40%;
+
+    }
+  }
+  @media screen and (max-width: 336px) {
+    .conteiner h1 {
+      font-size: 25px;
+      padding-top: 45%;
+    }
+  }
+  @media screen and (max-width: 290px) {
+    .conteiner h1 {
+      font-size: 23px;
+      padding-top: 50%;
+    }
+  }
+  @media screen and (max-width: 257px) {
+    .conteiner h1 {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 1267px) {
+    .conteiner .div_kozina_content{
+        width: 85%;
+    }
+  }
+  @media screen and (max-width: 968px) {
+    .conteiner .div_kozina_content{
+        width: 90%;
+    }
+  }
+  @media screen and (max-width: 853px) {
+    .conteiner .div_kozina_content{
+        width: 99%;
+    }
+  }
+  @media screen and (max-width: 776px) {
+      .conteiner .div_kozina_content{
+          width: 99%;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_img{
+            width: 44%;
+        }
+    }
+    @media screen and (max-width: 701px) {
+        .conteiner .div_kozina_content{
+            flex-wrap: wrap;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .conteiner .div_kozina_content .ofarmleniya_korzina{
+            display: none;
+
+        }
+
+        .conteiner .div_kozina_content .ofarmleniya_korzina1{
+            display: block;
+            margin-bottom: 5%;
+            width: 90%;
+        }
+        .conteiner .div_kozina_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .conteiner .div_kozina_content .ofarmleniya_korzina .oformlBTn{
+            position: relative;
+            left: 35%;
+            right: 35%;
+        }
+    }
+    @media screen and (max-width: 393px) {
+        .conteiner .div_kozina_content .ofarmleniya_korzina .oformlBTn{
+            position: relative;
+            left: 25%;
+            right: 35%;
+        }
+
+    }
+    @media screen and (max-width: 393px) {
+        .conteiner .div_kozina_content .ofarmleniya_korzina .oformlBTn{
+            position: relative;
+            left: 17%;
+            right: 40%;
+        }
+
+    }
+    
+    @media screen and (max-width: 511px) {
+        .conteiner .div_kozina_content .ofarmleniya_korzina .oformlBTn{
+            position: relative;
+            left: 17%;
+            right: 40%;
+        }
+
+
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_text button{
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+    }
+    @media screen and (max-width:461px){
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box{
+            flex-wrap: wrap;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_img{
+            width: 100%;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_text{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_text h4{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .conteiner .div_kozina_content .o_zakaz_karzina .o_zakaz_karzina_box .box_korzina_text button{
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+    }
+    
+
+    @media screen and (max-width:449px){
+    }
+ 
+    

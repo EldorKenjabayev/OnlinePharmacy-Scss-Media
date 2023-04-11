@@ -1,0 +1,225 @@
+.conteiner .o___Tovar {
+  width: 80%;
+  display: flex;
+  padding: 2%;
+  margin-top: 20%;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+  .o__tovar_img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .o__tovar_text {
+    padding: 2%;
+    width: 69%;
+    h2 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+      color: #000000;
+    }
+    p {
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 39px;
+      color: #00ac73;
+    }
+    .otavar__dis_flex {
+      display: flex;
+      justify-content: space-between;
+      .left_otavar {
+        line-height: 29px;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 42px;
+          color: #7e7e7e;
+        }
+      }
+      .rigth_otavar {
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 42px;
+          color: #000000;
+        }
+      }
+    }
+    .korzina {
+      position: relative;
+      left: 70%;
+      border: 1px solid transparent;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #fff;
+      padding: 20px 60px;
+      border-radius: 15px;
+      background-color: #00ac73;
+      transition: 0.5s linear all;
+      &:hover {
+        background-color: #fff;
+        color: #00ac73;
+        border: 1px solid;
+      }
+    }
+  }
+}
+
+.conteiner .opisaniya__tovara {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+  padding: 2%;
+  .div_box_opisaniya {
+    border-bottom: 1px solid #7e7e7e;
+  }
+  .div_box_opisaniya .div_box1_opisaniya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7% 0;
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      line-height: 45px;
+    }
+    .active_icon{
+      transform: rotate(180deg);
+    }
+    .active{
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+    .active2{
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+
+    .active3{
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+    .active4{
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+    .active5{
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(180deg);
+      i {
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+  }
+  .div_instruct_tovar5 {
+    display: none;
+  }
+  .div_instruct_tovar {
+    padding-top: 2%;
+  }
+  .div_instruct_tovarID1 {
+    display: none;
+  }
+  .div_instruct_tovarID2 {
+    display: none;
+  }
+  .div_instruct_tovarID3 {
+    display: none;
+  }
+  .div_instruct_tovarID4 {
+    display: none;
+  }
+  .div_instruct_tovarID5 {
+    display: block;
+  }
+}
+
+.conteiner  .content_tovar {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 2%;
+  background-color:rgba(126, 126, 126, 0.1);
+  gap: 1.5%;
+  flex-wrap: wrap;
+  
+  .box__tovar {
+    width: 240px;
+    height: 330px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: .5%;
+    background-color: #fff;
+    .tovar_img{
+      height: 170px;
+      display: flex;
+      justify-content: center; 
+      img{
+        width: 90%;
+        transition: .5s linear all;
+        &:hover{
+          transform: scale(1.07);
+        }
+      } 
+    }
+    a {
+      font-weight: 600;
+      text-align: start;
+      font-size: 20px;
+      color: #00ac73;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #7e7e7e;
+      padding-bottom: 20%;
+    }
+  }
+}
+
+.conteiner .pustoy_content{
+  width: 100%;
+  height: 10px;
+}

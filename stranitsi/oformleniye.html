@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/media/media_ofarmleniya.css">
+    <link rel="stylesheet" href="/media/media.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+    
+      <div class="navigation">
+        <div class="nav___logo_input">
+          <img src="/navbar.img/photo_2023-03-31_14-50-25.jpg" alt="img" />
+          <div class="input input2">
+            <input
+              type="text" class="input333"
+              placeholder="Введите название товара или заболевания "
+            />
+            <button><i class="bx bx-search"></i></button>
+          </div>
+        </div>
+        <div class="nav__user">
+          <select name="lang" id="lang">
+            <option value="">RUS</option>
+            <option value="">UZB</option>
+            <option value="">ENG</option>
+          </select>
+
+          <div class="box_user">
+            <a id="voyti" onclick="BTN_voyti()">Войти/</a>
+            <a id="register"  onclick="BTN_register()">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="voyti voyti2" id="voyti_content">
+        <h1>Войти</h1>
+        <i class='bx bx-x' onclick="exit_voyti()"></i>
+        <div class="voyti_box">
+          <label for="login">
+            <strong>Введите логин</strong>
+          </label>
+          <input type="text" placeholder="Максим" id="login"><br>
+          <label for="password">
+            <strong>Введите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password">
+          <div class="div__chekbox__zapil_parol">
+            <div class="div__chekbox">
+              <input type="checkbox"  id="chebox" style="width: 16px; margin-right: 4px; " >
+              <label for="chebox">
+                <strong>Запомнить меня</strong>
+              </label>
+            </div>
+            <a href="#">Забыли пароль?</a>
+          </div><br>
+          <a href="" class="voyti_btn">Войти</a>
+        </div>
+      </div>
+      <div class="registration registration2" id="register_content">
+        <h1>Регистрация</h1>
+        <i class='bx bx-x' onclick="exit_registration()" id="exit"></i>
+        <div class="registration_box" id="registration_box">
+          <label for="login">
+            <strong>Введите логин</strong>
+          </label>
+          <input type="text" placeholder="Максим" id="login"><br>
+          <label for="password">
+            <strong>Введите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password"><br>
+          <label for="password2">
+            <strong>Повторите пароль</strong>
+          </label>
+          <input type="password" placeholder="******" id="password2">
+          </label>
+          <label for="phone">Введите номер для получения кода</label>
+          <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="+998 90 900 90 90"> <br>
+          <a class="registration_btn" onclick="BTN_register_content()">Продолжить</a>
+      </div>
+      <div class="div_podverjdeniya" id="div_podverjdeniya">
+        <h3>Введите код подтверждения</h3>
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <div class="div__text_otp"><br>
+          <span>Возникли проблемы?</span><a href="#div_podverjdeniya"> Отправить еще раз.</a>
+        </div><br><br>
+        <a href="" class="podverjdenie">Подтвердить</a>
+      </div>
+    </div>
+    <h1>Оформление заказа</h1>
+    <div class="oplata_tip">
+        <div class="div_Oplata_tip">
+            <p>Шаг 1: Выберите тип оплаты</p><br>
+            <label for="chebox">
+                <strong>Наличными</strong>
+                <input type="radio"  id="chebox" style="width: 25px; border: 1px solid #00ac73 ;">
+              </label>
+        </div>
+        <div class="div_Oplata_tip2">
+            <label for="chebox">
+                <strong>Картой</strong>
+                <input type="radio"  id="chebox"  style="width: 30px; border: 1px solid #00ac73 ;">
+              </label><br>
+              <div class="div_line"></div>
+              <label for="phone" class="phone">Введите номер привязанный к карте</label><br>
+           <input type="tel" id="phone" name="phone" class="phone_number"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="+998 90 900 90 90">
+        </div>
+    </div><br>
+    <div class="div_mesto_naxojdeniya">
+        <h5>Шаг 2: Выберите адрес доставки</h5><br>
+        <p>Ташкент, Проспект Халклар Дустлиги, 1</p><br>
+        <div class="div_map">
+            <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ad0075cca68dd96375c1cdd3e605ebc15285a2b710b9317ea25828fb97447b9b6&amp;source=constructor" width="100%" height="350" frameborder="0" ></iframe>
+        </div>
+
+    </div> <br>
+    <div class="danniy_poluchatel">
+        <h3>Шаг 3: Введите данные получателя</h3><br><br>
+        <label for="login">
+            <strong>Введите имя получателя</strong>
+          </label><br>
+          <input type="text" placeholder="Шахзод" id="login"><br><br>
+          <label for="phone" class="danniy_tel">Введите номер получателя</label><br>
+          <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="+998 90 900 90 90">
+    </div> <br><br><br>
+    <div class="div_oplata_dale">
+        <a href="./oformleniya2.html">Продолжить</a>
+    </div>
+    <br><br><br>
+  
+      <footer>
+        <div class="div__footer1">
+          <img src="/footer_img/2 421.png" alt="img" />
+          <p>
+            Серви поддерживает вас и помогает найти лекарства по выгодным ценам
+            и с удобной круглосуточной доставкой почти в любую точку страны.
+            Будьте здоровы с нами!
+          </p>
+        </div>
+        <div class="div__footer">
+          <ul>
+            <h2>О компании</h2><br>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Пользовательское соглашение</a></li>
+            <li><a href="">Стать партнёром</a></li>
+            <li><a href="">Стать курьером</a></li>
+          </ul>
+        </div>
+        <div class="div__footer"><br><br>
+          <ul>
+            <h2>Помощь</h2><br>
+            <li><a href="">Часто задаваемы вопросы</a></li>
+            <li><a href="">Как заказать</a></li>
+            <li><a href="">Обратная связь</a></li>
+            <li><a href="">Правила для оформления отзывов и</a></li>
+            <li><a href="">комментариев</a></li>
+            <li><a href="">Стать курьером</a></li>
+          </ul>
+        </div>
+        <div class="div__footer2"> 
+          <p>Мы в социальных сетях</p><br>
+          <div class="div_social_media">
+            <a href=""><img src="/footer_img/Platform=Facebook, Shape=Rounded square, Colored=True.png" alt="img"></a>
+            <a href=""><img src="/footer_img/Platform=Instagram, Shape=Rounded square, Colored=True.png" alt="img"></a>
+            <a href=""><img src="/footer_img/Platform=Telegram, Shape=Rounded square, Colored=True.png" alt="img"></a> <br><br>
+          </div><br><br>
+          <a href="tel:+998 71 200-00-00">+998 71 200-00-00</a>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
